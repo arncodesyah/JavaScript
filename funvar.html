@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Scoping in Variables</title>
+</head>
+<body>
+    <button onclick="checkScope()">Click Here</button>
+    <script>
+        let global="Im Global"
+        function checkScope(){
+            let local="Im Local"
+            alert(local)
+            alert(global)
+        }
+
+    </script>
+</body>
+</html>
