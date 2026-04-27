@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Forms with JAvaSCript (i know thats not spelled right)</title>
+</head>
+<body>
+    <h2>Form</h2>
+   <input type="text" id="input">Enter username
+   <button>Submit</button>
+   <script>
+    document.getElementById("input").addEventListener("input",validate)
+    function validate(){
+        let input=document.getElementById("input").value
+        if(input.length<5){
+            alert("Invalid Username! Must be more than 5 characters!")
+
+        }
+        else{
+            alert("Submitted sucsessfully!")
+        }
+        
+    }
+
+   </script>
+</body>
+</html>

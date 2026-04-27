@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>DOM Title</title>
+    <style>
+        p{
+            color: cyan;
+            font-size: large;
+        }
+        button{
+            background-color: yellow;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>My DOM Example</u></h1>
+    <button onclick="color()">Click here to change color!</button>
+    <p id="pTag">change this color</p>
+    <script>
+        function color(){
+            let element= document.getElementById("pTag");element.innerHtml="now the color is changed"
+            element.style.color="red"
+        }
+    </script>
+</body>
+</html>
