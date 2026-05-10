@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Class Prohect JS</title>
+</head>
+
+<body>
+    <h2>JavaScript Class Inheritance</h2>
+
+    <button onclick="details()">See Student</button>
+    <button onclick="marks()">See Marks
+    </button>
+
+    <script>
+        class Student{
+            details(){
+                let age=13
+                let name="Ryanch"
+                alert ("Name is: " + name + " Age is: " + age)
+            }
+        }
+
+        class Grades extends Student{
+            marks(){
+                let grade="93 of 100"
+                alert ("Grade is: " + grade)
+            }
+        }
+
+        
+    </script>
+</body>
+
+</html>
